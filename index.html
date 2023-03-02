@@ -2,36 +2,79 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>MyFood - Online recipe book</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
-<header>
+<header class="siteFont">
     <div id="innerHeaderGroup">
+        <span class="material-symbols-outlined menuExtender">
+            <div id="menuExtender" class="menuExtender" onclick="openMenuBar()">menu</div>
+        </span>
         <h1 class="titles" id="titleText">MyFood.</h1>
     </div>
 </header>
 
-<body>
-    <div class="sideOptions">
-        <h2>Recipe Title test</h2>
+<body class="siteFont">
+    <div id="parent">
+        <aside id="sideOptions">
+            <h2 id="sideBarTitle">Edible Mountain</h2>
+            <ul class="pageNavOptions">
+                <li class="sideBarNavItem"><a>Ingredients</a></li>
+                <li class="sideBarNavItem"><a>Method</a></li>
+                <li class="sideBarNavItem"><a>Notes</a></li>
+                <li class="sideBarNavItem"><a>Your Notes</a></li>
+                <li class="sideBarNavItem" hidden id="exitOption" onclick="closeMenuBar()"><a>Exit</a></li>
+            </ul>
+            
+            <div>
+            <a class="saveToRecipe">Save to cookbook</a>    
+            </div>
+        </aside>
+        
+        <article class="mainSection" id="mainSection">
+            <img id="mainImage" src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/A-Alamy-BXWK5E_vvmkuf.jpg">
+            <div id="mainSectionTextBody">
+                <h1 class="mainRecipeTitle">Edible Mountain</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida interdum lacinia. Curabitur sodales egestas leo, non iaculis ligula blandit in. Suspendisse lacinia lacinia finibus. Nullam porttitor magna turpis, vel pulvinar velit aliquet ut. Aenean et velit non mi euismod ornare. Nulla quis placerat mauris, ac cursus tortor. Mauris vel est sit amet nibh malesuada pharetra vitae vel nisl. Etiam eget dictum magna, in ultrices mauris. Pellentesque pretium purus sed magna viverra, ac sagittis ligula molestie. Vivamus volutpat faucibus auctor. Phasellus vel fermentum libero. Duis a enim in enim finibus vestibulum. Quisque ornare, risus id imperdiet gravida, sapien risus sagittis massa, blandit feugiat odio nulla vitae tortor.
+
+                    Vestibulum tempor orci eget felis aliquam eleifend. Pellentesque vulputate, nisl id vulputate tempus, tellus sapien vestibulum erat, sit amet iaculis est arcu non tellus. Integer id nisl eu nulla lacinia dapibus eu eget ante. Sed quis augue consectetur, congue diam et, pulvinar lacus. Curabitur porta orci accumsan convallis congue. Maecenas placerat viverra justo, nec tincidunt sem facilisis porta. Vestibulum maximus pulvinar fermentum.
+                    
+                    Nunc ullamcorper sem at scelerisque pretium. Maecenas convallis odio ut velit pellentesque sollicitudin. Donec tempus elementum dolor ut iaculis. Nunc dolor odio, mollis sit amet justo quis, semper bibendum urna. Vestibulum convallis maximus velit, sed dapibus justo interdum eu. Nam molestie dui at turpis finibus bibendum. Phasellus ornare tortor vel nibh imperdiet, in placerat ligula pharetra. Duis dictum orci a tempus semper. Phasellus convallis ut massa quis pulvinar. Ut et erat quis ipsum convallis dictum. Sed elementum cursus tellus, a cursus eros dapibus in. Aenean sed tincidunt felis. Nulla et nisi nec ipsum dapibus maximus. Vestibulum consectetur sem a massa mollis, in varius nibh lobortis. Aliquam sodales risus eu sapien faucibus placerat. Curabitur sed neque pharetra, elementum arcu id, ullamcorper leo.
+                    
+                    Aliquam sollicitudin volutpat mi, vel porta ligula mattis sit amet. Donec bibendum convallis elit, id pharetra mi molestie eu. Mauris non consequat justo. Nunc interdum eleifend urna, sed dignissim neque faucibus vitae. Integer malesuada nisi ac nisl eleifend, quis porttitor dolor posuere. Nullam neque felis, condimentum eget nulla sed, blandit auctor lorem. Suspendisse placerat maximus accumsan. Proin suscipit fringilla nibh. Vivamus non ultrices orci. Maecenas sed malesuada sem. Donec non mauris et magna rutrum porta ut ut nunc. Phasellus imperdiet, nulla nec aliquet bibendum, eros mauris condimentum libero, id posuere eros turpis et nulla. Maecenas nibh dui, imperdiet quis nunc sed, pulvinar posuere orci. Nunc nec lobortis diam. Etiam luctus auctor orci ac tincidunt. Mauris auctor sem eget vestibulum iaculis.
+                    
+                    Quisque vel diam a urna imperdiet scelerisque vel in orci. Cras condimentum felis lorem, vel fringilla felis mattis nec. Maecenas vitae ultrices massa. Pellentesque consequat erat enim, ac hendrerit quam ultrices sit amet. Sed in imperdiet quam, ac pellentesque odio. Vestibulum efficitur eget nisl a ullamcorper. Phasellus eu tellus hendrerit, auctor elit vel, mollis arcu. Nunc ipsum augue, mollis a neque tempus, consectetur convallis libero. Proin ut mi posuere, convallis purus ac, venenatis est. Curabitur bibendum, metus sed condimentum suscipit, neque turpis laoreet risus, vel eleifend sapien neque sit amet mauris. Fusce facilisis rutrum turpis vel ornare. Nunc id nisi ac lacus venenatis facilisis. Vestibulum eget lorem ut lorem malesuada rutrum. Mauris ullamcorper, orci eu tincidunt sagittis, ligula nisi ultrices turpis, nec commodo augue felis et augue. Integer lobortis, libero non semper posuere, lorem neque sodales ipsum, eget faucibus urna velit quis nisl.</p>
+                </div>
+        </article>
+        <div id="nullBar" class="nullBar"></div>
     </div>
 
 </body>
 
 <style>
-    .titles {
-        font-family: 'Merriweather', serif;
-        margin: 0px;
-        font-size: 27pt;
+    /* Website Sections */
+    #parent {
+        display: flex;
     }
-    h2 {
-        font-weight: 700;
-        font-size: 20pt;
+    #sideOptions {
+        margin-left: 2%;
+        width: 25%;
+        height: 100%;
+        max-width: 250px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
     }
-    .sideOptions {
-        margin-left: 5%;
+    .mainSection {
+        flex: 1;
+        background-color: white;
+        width: 75%;
+        height: 100%;
     }
+
+    /* Element and global styling */
     header {
         background-color: white;
         margin: 0px;
@@ -42,12 +85,121 @@
         margin: 0px;
         padding: 0px;
     }
+    h2 {
+        font-weight: 700;
+        font-size: 20pt;
+    }
+    .siteFont {
+        font-family: 'Merriweather', serif;
+    }
+    .titles {
+        margin: 0px;
+        font-size: 27pt;
+    }
+    /* Header Group Styling */
     #innerHeaderGroup {
         padding-top: 1%;
         padding-left: 1%;
         padding-bottom: 1%;
     }
+    .menuExtender {
+        float: right;
+        font-size: 30pt;
+    }
     #titleText {
         font-weight: 900;
     }
+    /* Side Section - child definitions */
+    .pageNavOptions {
+        list-style: none;
+        margin-top: 0.1rem;
+    }
+    #sideBarTitle {
+        margin-bottom: 0rem;
+    }
+    /* Main section styling */
+    #mainImage {
+        width:100%;
+    }
+    #mainSectionTextBody {
+        padding-left: 3%;
+        padding-right: 10%;
+        height: 100%;
+    }
+    .mainRecipeTitle {
+        font-size: 64;
+        font-weight: bold;
+    }
+    .sideBarNavItem {
+        margin-top: 10px;
+    }
+    .saveToRecipe {
+        position:fixed;
+        bottom: 0;
+        margin-bottom: 4%
+    }
+    #exitOption {
+        font-weight: bold;
+    }
+    /* nullbar styling */
+    .nullBar {
+        height: 100%;
+        width: 3%;
+    }
+    
 </style>
+
+<script>
+    function checkWindowSize() {
+        if (window.innerWidth < 900) {
+            document.getElementById("sideOptions").hidden = true
+            document.getElementById("nullBar").hidden = true
+            document.getElementById("sideOptions").style.width = "100%"
+            document.getElementById("parent").style.display = "inline"
+            document.getElementById("sideOptions").style.textAlign = "center"
+            document.getElementById("sideOptions").style.alignContent = "left"
+            document.getElementById("nullBar").hidden = true
+            document.getElementById("menuExtender").hidden = false
+            document.getElementById("exitOption").hidden = false
+            document.getElementById("mainSection").style.width = "100%"
+            document.getElementById("mainSection").style.height = "fit-content"
+            document.getElementById("sideOptions").style.fontSize = "22pt"
+            document.getElementById("sideOptions").style.marginLeft = "15%"
+
+        } else {
+            document.getElementById("sideOptions").hidden = false
+            document.getElementById("nullBar").hidden = false
+            document.getElementById("sideOptions").style.width = "25%"
+            document.getElementById("parent").style.display = "flex"
+            document.getElementById("sideOptions").style.textAlign = "left"
+            document.getElementById("sideOptions").style.alignContent = "left"
+            document.getElementById("nullBar").hidden = false
+            document.getElementById("menuExtender").hidden = true
+            document.getElementById("exitOption").hidden = true
+            document.getElementById("sideOptions").style.fontSize = "16px"
+            document.getElementById("sideOptions").style.marginLeft = "1%"
+        }
+    }
+    function openMenuBar() {
+        document.getElementById("sideOptions").hidden = false
+        document.getElementById("mainSection").hidden = true
+    }
+
+    function closeMenuBar() {
+        document.getElementById("sideOptions").hidden = true
+        document.getElementById("mainSection").hidden = false
+    }
+
+    window.onresize = checkWindowSize;
+    window.onload = checkWindowSize;
+
+    function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+    }
+</script>
